@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --red: #b22824;
+    --blue: #0c0e44
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: transparent;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+header {
+    background-image: url("./assets/head.png");
+    height: 980px;
+    background-repeat: no-repeat;
+    background-color: #0c0e44;
+    width: 100%;
+}
+
+/*styling phone part*/
+.phone {
+    height: 85%;
+    width: 361px;
+    position: relative;
+    margin: 0 172px;
+    display: inline-block;
+}
+
+.phone h4 {
+    font-family: "Kanit", sans-serif;
+    position: absolute;
+    top: 275px;
+    width: 148px;
+    color: white;
+    text-align: center;
+    left: 45px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1rem;
+}
+
+.phone p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 402px;
+    padding: 0 30px;
+    line-height: 22px;
+}
+
+.btn {
+    width: 250px;
+    height: 70px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: 0;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.phone .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    background-color: #fcf8f9;
+    transform: translate(-50%);
+    font-family: "Kanit", sans-serif;
+    color: var(--blue)
+}
+
+.blue-part {
+    width: 500px;
+    background-color: #0c0e44;
+    color: whitesmoke;
+    min-height: 400px;
+    position: relative;
+    padding: 50px;
+    display: inline-block;
+    transform: translate(102px, -320px);
+}
+
+.blue-part h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 3rem;
+    margin: 100px auto 20px;
+}
+
+.blue-part p {
+    font-size: 1.3rem;
+}
+
+.blue-part .btn {
+    font-family: "Kanit", sans-serif;
+    margin: 20px auto;
+    background-color: #397de8;
+    color: white;
+}
+
+/*styling social part*/
+.social {
+    height: 400px;
+    background-color: var(--blue);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.social .about {
+    color: white;
+    width: 660px;
+    padding: 60px;
+}
+
+.social .about h3 {
+    font-family: "Kanit", sans-serif;
+    font-size: 2rem;
+    margin: 20px auto;
+}
+
+.social .about h3+p {
+    margin: 10px auto 55px;
+    font-size: 1.1rem;
+}
+
+
+.social .about .red-box {
+    padding: 40px 88px;
+    line-height: 24px;
+    background-color: #d92827;
+    margin-left: -62px;
+    width: 487px;
+    height: 193px
+}
+
+.social .icons {
+    width: 360px;
+    min-height: 220px;
+    background-color: white;
+    border-radius: 6px;
+    margin: 113px 105px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.icons a {
+    display: flex;
+    width: 70px;
+    height: 60px;
+    margin: 8px;
+    transition: all 0.4s ease;
+}
+
+.icons a:hover {
+    transform: scale(0.9);
+}
+
+.icons a img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* styling third part */
+
+.third-part {
+    width: 100%;
+    background-image: url("./assets/third.png");
+    height: 800px;
+    background-color: var(--blue);
+    background-repeat: no-repeat;
+    position: relative
+}
+
+.third-part p {
+    position: absolute;
+    min-height: 0;
+    width: 797px;
+    left: 0;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #d02524;
+    bottom: -87px;
+    padding: 120px 215px;
+}
+
+/* styling forth part  */
+.forth-part {
+    width: 100%;
+    min-height: 600px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.forth-part .info {
+    color: white;
+    width: 680px;
+    padding: 100px;
+}
+
+.forth-part .info h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 4rem;
+    width: 100%
+}
+
+.forth-part .info p {
+    color: #cecece;
+    font-size: 1.2rem;
+    margin: 25px 0;
+}
+
+.forth-part .info h2 {
+    font-family: "Kanit", sans-serif;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.forth-part .reviews {
+    width: 400px;
+    padding: 30px 40px;
+    border-left: 1px solid #9598db;
+    min-height: 400px;
+    margin: 100px;
+}
+
+.reviews .review {
+    border-bottom: 1px solid #9598db;
+    margin-bottom: 20px;
+}
+
+.reviews .stars {
+    color: #eecd1b;
+    margin: 5px 0;
+}
+
+.reviews p {
+    margin: 5px 15px;
+    font-style: italic;
+    color: #cecece
+}
+
+.reviews h4 {
+    color: white;
+    margin: 5px 15px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        background-image: none;
+    }
+
+    .phone {
+        background-image: url("./assets/head-sm.png");
+        width: 100%;
+        background-repeat: no-repeat;
+        margin: auto;
+        height: 930px;
+        background-color: #c8443c;
+    }
+
+    .phone h4 {
+        text-align: center;
+        min-width: 200px;
+        margin: auto;
+        left: 50%;
+        background-color: var(--blue);
+        transform: translate(-50%);
+        top: 190px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 8px;
+    }
+
+    .phone p {
+        width: 70%;
+        top: 310px;
+        padding: 40px;
+        background-color: #4d474063;
+        min-height: 250px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 8px;
+    }
+
+    .phone .btn {
+        bottom: 30px;
+    }
+
+    .blue-part {
+        display: none;
+    }
+
+    .third-part {
+        background-image: url("./assets/third-sm.png");
+        background-color: #d02524;
+    }
+
+    .social .about {
+        width: 100%;
+        padding: 0
+    }
+
+    .social {
+        background-color: #0c0e44;
+        width: 100vw;
+        text-align: center;
+        padding: 50px;
+height:fit-content;    }
+    .social .about .red-box {
+        background-color: #0c0e44;
+        padding: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    .red-box p {
+        width: 78%;
+        margin: auto;
+    }
+
+    .third-part p {
+        padding: 41px 60px 100px;
+        width: 100%;
+    }
+
+    .forth-part .info {
+        padding: 60px;
+        width: 100%;
+    }
+
+    .forth-part .reviews {
+        border-left: 0
+    }
