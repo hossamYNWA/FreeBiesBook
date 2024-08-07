@@ -336,7 +336,9 @@ header {
         width: 100vw;
         text-align: center;
         padding: 50px;
-height:fit-content;    }
+        height: fit-content;
+    }
+
     .social .about .red-box {
         background-color: #0c0e44;
         padding: 0;
@@ -360,5 +362,12 @@ height:fit-content;    }
     }
 
     .forth-part .reviews {
-        border-left: 0
+        border-left: 0;
+        margin: auto;
     }
+
+    .social .icons {
+        width: 145%;
+        margin: auto;
+    }
+}
